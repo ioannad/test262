@@ -5,7 +5,6 @@
 esid: sec-block-runtime-semantics-evaluation
 description: Initialized value is disposed with the correct 'this' value
 info: |
-
   RS: Evaluation
     Block : { StatementList }
 

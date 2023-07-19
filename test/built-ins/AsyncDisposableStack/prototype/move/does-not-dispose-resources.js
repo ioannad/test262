@@ -5,7 +5,6 @@
 esid: sec-asyncdisposablestack.prototype.move
 description: Resources in the stack are not disposed when move is called.
 info: |
-
   AsyncDisposableStack.prototype.move ( )
 
   1. Let asyncDisposableStack be the this value.

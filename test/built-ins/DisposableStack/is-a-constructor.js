@@ -16,7 +16,7 @@ info: |
   If argument has a [[Construct]] internal method, return true.
   Return false.
 includes: [isConstructor.js]
-features: [explicit-resource-management, DisposableStack]
+features: [explicit-resource-management, Reflect.construct]
 ---*/
 
 assert.sameValue(isConstructor(DisposableStack), true, 'isConstructor(DisposableStack) must return true');

@@ -6,7 +6,6 @@ esid: sec-let-and-const-declarations-runtime-semantics-evaluation
 description: Invokes [Symbol.asyncDispose] getter
 info: |
 info: |
-
   RS: Evaluation
     AwaitUsingDeclaration : CoverAwaitExpressionAndAwaitUsingDeclarationHead BindingList ;
 

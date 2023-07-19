@@ -7,7 +7,6 @@ description: >
   Throws a nested hierarchy of SuppressedErrors if multiple errors were thrown during evaluation of subsequent statements following 'using'
   and/or from disposal.
 info: |
-
   DisposeResources ( disposeCapability, completion )
 
   1. For each resource of disposeCapability.[[DisposableResourceStack]], in reverse list order, do

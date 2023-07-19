@@ -5,7 +5,6 @@
 esid: sec-disposeresources
 description: Multiple resources are disposed in the reverse of the order in which they were added
 info: |
-
   RS: Evaluation
     Block : { StatementList }
 

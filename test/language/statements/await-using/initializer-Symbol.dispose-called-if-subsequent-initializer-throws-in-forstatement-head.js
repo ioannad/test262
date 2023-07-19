@@ -5,7 +5,6 @@
 esid: sec-runtime-semantics-forloopevaluation
 description: Initialized value is disposed at end of FunctionBody
 info: |
-
   RS: ForLoopEvaluation
     ForStatement : for ( LexicalDeclaration Expressionopt ; Expressionopt ) Statement
 

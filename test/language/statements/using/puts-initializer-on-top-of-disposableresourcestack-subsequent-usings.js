@@ -7,7 +7,6 @@ description: >
   Puts initialized value on the top of the environment's [[DisposableResourceStack]] with multiple subsequent 'using'
   declarations in the same block scope
 info: |
-
   RS: Evaluation
     UsingDeclaration : using BindingList ;
 

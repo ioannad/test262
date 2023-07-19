@@ -5,7 +5,6 @@
 esid: sec-block-runtime-semantics-evaluation
 description: Initialized value is disposed even if subsequent initializer throws
 info: |
-
   RS: Evaluation
     Block : { StatementList }
 

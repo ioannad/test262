@@ -7,10 +7,21 @@ info: |
   %AsyncIteratorPrototype% [ @@asyncDispose ] ( )
 
   1. Let O be the this value.
-  2. Let return be ? GetMethod(O, "return").
-  3. If return is not undefined, then
-    a. Perform ? Call(return, O, « »).
-  4. Return undefined.
+  2. Let promiseCapability be ! NewPromiseCapability(%Promise%).
+  3. Let return be GetMethod(O, "return").
+  4. IfAbruptRejectPromise(return, promiseCapability).
+  5. If return is undefined, then
+    a. Perform ! Call(promiseCapability.[[Resolve]], undefined, « undefined »).
+  6. Else,
+    a. Let result be Call(return, O, « undefined »).
+    b. IfAbruptRejectPromise(result, promiseCapability).
+    c. Let resultWrapper be Completion(PromiseResolve(%Promise%, result)).
+    d. IfAbruptRejectPromise(resultWrapper, promiseCapability).
+    e. Let unwrap be a new Abstract Closure that performs the following steps when called:
+      i. Return undefined.
+    f. Let onFulfilled be CreateBuiltinFunction(unwrap, 1, "", « »).
+    g. Perform PerformPromiseThen(resultWrapper, onFulfilled, undefined, promiseCapability).
+  7. Return promiseCapability.[[Promise]].
 
 flags: [async]
 includes: [asyncHelpers.js]

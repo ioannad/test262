@@ -5,7 +5,6 @@
 esid: sec-switch-statement-runtime-semantics-evaluation
 description: Initialized value is disposed at end of a SwitchStatement
 info: |
-
   RS: Evaluation
     SwitchStatement : switch ( Expression ) CaseBlock
 

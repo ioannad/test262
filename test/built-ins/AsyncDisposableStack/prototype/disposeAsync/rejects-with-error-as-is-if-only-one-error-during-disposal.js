@@ -5,7 +5,6 @@
 esid: sec-asyncdisposablestack.prototype.disposeAsync
 description: Rethrows an error from a disposal as-is if it is the only error.
 info: |
-
   AsyncDisposableStack.prototype.disposeAsync ( )
 
   1. Let asyncDisposableStack be the this value.

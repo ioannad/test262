@@ -5,7 +5,6 @@
 esid: sec-runtime-semantics-evaluatefunctionbody
 description: Initialized value is disposed at end of FunctionBody
 info: |
-
   FunctionBody : FunctionStatementList
 
   ...

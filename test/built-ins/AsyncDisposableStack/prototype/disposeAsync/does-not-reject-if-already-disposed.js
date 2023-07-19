@@ -5,7 +5,6 @@
 esid: sec-asyncdisposablestack.prototype.disposeAsync
 description: Does not throw if already disposed.
 info: |
-
   AsyncDisposableStack.prototype.disposeAsync ( )
 
   1. Let asyncDisposableStack be the this value.

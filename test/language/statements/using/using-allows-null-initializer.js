@@ -5,7 +5,6 @@
 esid: sec-let-and-const-declarations-runtime-semantics-evaluation
 description: Allows null in initializer of 'using'
 info: |
-
   RS: Evaluation
     UsingDeclaration : using BindingList ;
 

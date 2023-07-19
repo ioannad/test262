@@ -5,7 +5,6 @@
 esid: sec-asyncgeneratorstart
 description: Initialized value is disposed at end of AsyncGeneratorBody
 info: |
-
   AsyncGeneratorStart ( generator, generatorBody )
 
   1. Assert: generator.[[AsyncGeneratorState]] is undefined.

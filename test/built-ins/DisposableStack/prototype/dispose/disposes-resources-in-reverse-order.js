@@ -5,7 +5,6 @@
 esid: sec-disposablestack.prototype.dispose
 description: Added resources are disposed in reverse order
 info: |
-
   UsingDeclaration : using BindingList ;
 
   1. Perform ? BindingEvaluation of BindingList with argument sync-dispose.

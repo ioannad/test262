@@ -5,7 +5,6 @@
 esid: sec-disposablestack.prototype.use
 description: Invokes [Symbol.dispose] getter
 info: |
-
   DisposableStack.prototype.use ( value )
 
   1. Let disposableStack be the this value.

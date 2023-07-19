@@ -5,7 +5,6 @@
 esid: sec-let-and-const-declarations-runtime-semantics-evaluation
 description: Throws if initialized value's Symbol.dispose property is null
 info: |
-
   RS: Evaluation
     UsingDeclaration : using BindingList ;
 
@@ -65,7 +64,7 @@ info: |
   2. If func is either undefined or null, return undefined.
   3. ...
 
-includes: [propertyHelper.js]
+includes: []
 features: [explicit-resource-management]
 ---*/
 

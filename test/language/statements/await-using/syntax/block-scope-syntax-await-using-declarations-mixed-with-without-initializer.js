@@ -9,7 +9,7 @@ negative:
   phase: parse
   type: SyntaxError
 flags: [async]
-includes: [asyncHelpers.js]
+includes: []
 features: [explicit-resource-management]
 ---*/
 

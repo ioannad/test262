@@ -5,7 +5,6 @@
 esid: sec-disposablestack.prototype.dispose
 description: Does not throw if already disposed.
 info: |
-
   DisposableStack.prototype.dispose ( )
 
   1. Let disposableStack be the this value.

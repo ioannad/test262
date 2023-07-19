@@ -5,7 +5,6 @@
 esid: sec-let-and-const-declarations-runtime-semantics-evaluation
 description: Throws if initialized value's Symbol.dispose property is not callable
 info: |
-
   RS: Evaluation
     UsingDeclaration : using BindingList ;
 
@@ -69,7 +68,7 @@ info: |
   3. If IsCallable(func) is false, throw a TypeError exception.
   4. Return func.
 
-includes: [propertyHelper.js]
+includes: []
 features: [explicit-resource-management]
 ---*/
 

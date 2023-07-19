@@ -5,7 +5,6 @@
 esid: sec-asyncdisposablestack.prototype.disposeAsync
 description: Sets the [[AsyncDisposableState]] internal slot to disposed
 info: |
-
   AsyncDisposableStack.prototype.disposeAsync ( )
 
   1. Let asyncDisposableStack be the this value.

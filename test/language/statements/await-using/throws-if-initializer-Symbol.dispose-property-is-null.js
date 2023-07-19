@@ -5,7 +5,6 @@
 esid: sec-let-and-const-declarations-runtime-semantics-evaluation
 description: Throws if initialized value's Symbol.dispose property is null
 info: |
-
   RS: Evaluation
     AwaitUsingDeclaration : CoverAwaitExpressionAndAwaitUsingDeclarationHead BindingList ;
 
@@ -68,7 +67,7 @@ info: |
   3. ...
 
 flags: [async]
-includes: [asyncHelpers.js, propertyHelper.js]
+includes: [asyncHelpers.js]
 features: [explicit-resource-management]
 ---*/
 

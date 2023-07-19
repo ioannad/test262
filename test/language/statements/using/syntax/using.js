@@ -23,4 +23,3 @@ if (true) {
   using z = obj;
   assert.sameValue(z, obj);
 }
-

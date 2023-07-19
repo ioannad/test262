@@ -8,11 +8,11 @@ description: >
 negative:
   phase: parse
   type: SyntaxError
-flags: [async]
-includes: [asyncHelpers.js]
 features: [explicit-resource-management]
 ---*/
 
-asyncTest(async function() {
+$DONOTEVALUATE();
+
+async function f() {
   await using x = null, [] = null;
-});
+}

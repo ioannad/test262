@@ -5,7 +5,6 @@
 esid: sec-disposablestack.prototype.dispose
 description: Rethrows an error from a disposal as-is if it is the only error.
 info: |
-
   DisposableStack.prototype.dispose ( )
 
   1. Let disposableStack be the this value.

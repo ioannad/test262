@@ -5,7 +5,6 @@
 esid: sec-runtime-semantics-forin-div-ofbodyevaluation-lhs-stmt-iterator-lhskind-labelset
 description: Initialized value is disposed at end of each iteration of ForOfStatement
 info: |
-
   ForIn/OfBodyEvaluation ( lhs, stmt, iteratorRecord, iterationKind, lhsKind, labelSet [ , iteratorKind ] )
 
   1. If iteratorKind is not present, set iteratorKind to sync.

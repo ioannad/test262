@@ -5,7 +5,6 @@
 esid: sec-let-and-const-declarations-runtime-semantics-evaluation
 description: Invokes [Symbol.dispose] getter
 info: |
-
   RS: Evaluation
     UsingDeclaration : using BindingList ;
 

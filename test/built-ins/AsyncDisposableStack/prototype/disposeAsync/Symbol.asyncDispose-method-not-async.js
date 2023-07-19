@@ -5,7 +5,6 @@
 esid: sec-asyncdisposablestack.prototype.disposeAsync
 description: Disposal succeeds even if [Symbol.disposeAsync] does not return a Promise.
 info: |
-
   AsyncDisposableStack.prototype.disposeAsync ( )
 
   1. Let asyncDisposableStack be the this value.

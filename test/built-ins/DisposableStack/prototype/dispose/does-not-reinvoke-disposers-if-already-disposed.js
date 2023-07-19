@@ -5,7 +5,6 @@
 esid: sec-disposablestack.prototype.dispose
 description: Does not re-invoke disposal on resources after stack has already been disposed.
 info: |
-
   DisposableStack.prototype.dispose ( )
 
   1. Let disposableStack be the this value.

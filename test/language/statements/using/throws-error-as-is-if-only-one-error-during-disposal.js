@@ -7,7 +7,6 @@ description: >
   Rethrows an error as-is if it is the only error thrown during evaluation of subsequent statements following 'using'
   or from disposal.
 info: |
-
   DisposeResources ( disposeCapability, completion )
 
   1. For each resource of disposeCapability.[[DisposableResourceStack]], in reverse list order, do

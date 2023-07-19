@@ -5,7 +5,6 @@
 esid: sec-disposablestack.prototype.dispose
 description: Return value of dispose is undefined
 info: |
-
   DisposableStack.prototype.dispose ( )
 
   1. Let disposableStack be the this value.

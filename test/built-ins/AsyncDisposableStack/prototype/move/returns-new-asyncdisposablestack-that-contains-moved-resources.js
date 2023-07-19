@@ -5,7 +5,6 @@
 esid: sec-asyncdisposablestack.prototype.move
 description: Returns a new AsyncDisposableStack that contains the resources originally contained in this stack.
 info: |
-
   AsyncDisposableStack.prototype.move ( )
 
   1. Let asyncDisposableStack be the this value.

@@ -5,7 +5,6 @@
 esid: sec-generatorstart
 description: Initialized value is disposed at end of GeneratorBody
 info: |
-
   GeneratorStart ( generator, generatorBody )
   
   1. Assert: The value of generator.[[GeneratorState]] is undefined.

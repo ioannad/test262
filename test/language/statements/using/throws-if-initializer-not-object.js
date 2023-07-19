@@ -5,7 +5,6 @@
 esid: sec-let-and-const-declarations-runtime-semantics-evaluation
 description: Throws if initialized value is not an Object
 info: |
-
   RS: Evaluation
     UsingDeclaration : using BindingList ;
 
@@ -47,7 +46,7 @@ info: |
       ...
   ...
 
-includes: [propertyHelper.js]
+includes: []
 features: [explicit-resource-management]
 ---*/
 

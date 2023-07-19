@@ -6,7 +6,6 @@ esid: sec-disposeresources
 description: >
   `await using` allows a non-Promise return value from `[Symbol.asyncDispose]()`
 info: |
-
   DisposeResources ( disposeCapability, completion )
 
   1. For each resource of disposeCapability.[[DisposableResourceStack]], in reverse list order, do

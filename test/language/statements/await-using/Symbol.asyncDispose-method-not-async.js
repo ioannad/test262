@@ -5,7 +5,6 @@
 esid: sec-block-runtime-semantics-evaluation
 description: Disposal succeeds even if [Symbol.disposeAsync] does not return a Promise.
 info: |
-
   RS: Evaluation
     Block : { StatementList }
 

@@ -5,7 +5,6 @@
 esid: sec-disposablestack.prototype.move
 description: The stack's [[DisposableState]] internal slot is set to disposed.
 info: |
-
   DisposableStack.prototype.move ( )
 
   1. Let disposableStack be the this value.

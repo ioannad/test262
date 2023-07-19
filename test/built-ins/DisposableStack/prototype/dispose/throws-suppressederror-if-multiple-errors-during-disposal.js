@@ -5,7 +5,6 @@
 esid: sec-disposablestack.prototype.dispose
 description: Throws multiple errors from a disposal nested in one or more SuppressedError instances.
 info: |
-
   DisposableStack.prototype.dispose ( )
 
   1. Let disposableStack be the this value.

@@ -5,7 +5,6 @@
 esid: sec-let-and-const-declarations-runtime-semantics-evaluation
 description: An 'await using' does not imply an Await occurs if the statement is not evaluated
 info: |
-
   RS: Evaluation
     AwaitUsingDeclaration : CoverAwaitExpressionAndAwaitUsingDeclarationHead BindingList ;
 
@@ -72,32 +71,32 @@ info: |
   4. Return undefined.
 
 flags: [async]
-includes: [asyncHelpers.js, propertyHelper.js]
+includes: [asyncHelpers.js]
 features: [explicit-resource-management]
 ---*/
 
 asyncTest(async function () {
-    var BREAK_EARLY = true;
-    var isRunningInSameMicrotask = true;
-    var wasStartedInSameMicrotask = false;
-    var didEvaluatePrecedingBlockStatementsInSameMicrotask = false;
-    var wasRunningInSameMicrotask = false;
-  
-    async function f() {
-      wasStartedInSameMicrotask = isRunningInSameMicrotask;
-      outer: {
-        didEvaluatePrecedingBlockStatementsInSameMicrotask = isRunningInSameMicrotask;
-        if (BREAK_EARLY) break outer;
-        await using _ = null;
-      }
-      wasRunningInSameMicrotask = isRunningInSameMicrotask;
+  var BREAK_EARLY = true;
+  var isRunningInSameMicrotask = true;
+  var wasStartedInSameMicrotask = false;
+  var didEvaluatePrecedingBlockStatementsInSameMicrotask = false;
+  var wasRunningInSameMicrotask = false;
+
+  async function f() {
+    wasStartedInSameMicrotask = isRunningInSameMicrotask;
+    outer: {
+      didEvaluatePrecedingBlockStatementsInSameMicrotask = isRunningInSameMicrotask;
+      if (BREAK_EARLY) break outer;
+      await using _ = null;
     }
-  
-    var p = f();
-    isRunningInSameMicrotask = false;
-    await p;
-  
-    assert.sameValue(wasStartedInSameMicrotask, true, 'Expected async function containing `await using` to start in the same microtask');
-    assert.sameValue(didEvaluatePrecedingBlockStatementsInSameMicrotask, true, 'Expected block statements preceding `await using` to be evaluated in the same microtask');
-    assert.sameValue(wasRunningInSameMicrotask, true, 'Expected statements following the block containing unevaluated `await using` to evaluate in the same microtask');
-  });
+    wasRunningInSameMicrotask = isRunningInSameMicrotask;
+  }
+
+  var p = f();
+  isRunningInSameMicrotask = false;
+  await p;
+
+  assert.sameValue(wasStartedInSameMicrotask, true, 'Expected async function containing `await using` to start in the same microtask');
+  assert.sameValue(didEvaluatePrecedingBlockStatementsInSameMicrotask, true, 'Expected block statements preceding `await using` to be evaluated in the same microtask');
+  assert.sameValue(wasRunningInSameMicrotask, true, 'Expected statements following the block containing unevaluated `await using` to evaluate in the same microtask');
+});

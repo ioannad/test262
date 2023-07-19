@@ -5,7 +5,6 @@
 esid: sec-let-and-const-declarations-runtime-semantics-evaluation
 description: An 'await using' implies an Await occurs if the statement is evaluated, even if all initializers are 'null' or 'undefined'
 info: |
-
   RS: Evaluation
     AwaitUsingDeclaration : CoverAwaitExpressionAndAwaitUsingDeclarationHead BindingList ;
 
@@ -72,7 +71,7 @@ info: |
   4. Return undefined.
 
 flags: [async]
-includes: [asyncHelpers.js, propertyHelper.js]
+includes: [asyncHelpers.js]
 features: [explicit-resource-management]
 ---*/
 

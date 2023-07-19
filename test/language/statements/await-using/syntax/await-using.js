@@ -6,7 +6,7 @@ esid: pending
 description: >
     module and block scope await using
 flags: [module]
-includes: [asyncHelpers.js]
+includes: []
 features: [explicit-resource-management]
 ---*/
 

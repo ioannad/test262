@@ -14,7 +14,7 @@ info: |
   4. Perform CreateNonEnumerableDataPropertyOrThrow(O, "error", error).
   5. Perform CreateNonEnumerableDataPropertyOrThrow(O, "suppressed", suppressed).
 
-includes: [deepEqual.js]
+includes: []
 features: [explicit-resource-management, Symbol.iterator]
 ---*/
 

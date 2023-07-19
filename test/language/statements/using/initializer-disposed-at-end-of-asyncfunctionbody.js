@@ -5,7 +5,6 @@
 esid: sec-asyncblockstart
 description: Initialized value is disposed at end of AsyncFunctionBody
 info: |
-
   AsyncBlockStart ( promiseCapability, asyncBody, asyncContext )
 
   1. Assert: promiseCapability is a PromiseCapability Record.

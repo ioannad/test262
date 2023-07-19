@@ -5,7 +5,6 @@
 esid: sec-let-and-const-declarations-runtime-semantics-evaluation
 description: Throws if initialized value is not an Object
 info: |
-
   RS: Evaluation
     AwaitUsingDeclaration : CoverAwaitExpressionAndAwaitUsingDeclarationHead BindingList ;
 
@@ -48,7 +47,7 @@ info: |
   ...
 
 flags: [async]
-includes: [asyncHelpers.js, propertyHelper.js]
+includes: [asyncHelpers.js]
 features: [explicit-resource-management]
 ---*/
 

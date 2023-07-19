@@ -11,6 +11,8 @@ negative:
 features: [explicit-resource-management]
 ---*/
 
+$DONOTEVALUATE();
+
 {
   using x = null, [] = null;
 }

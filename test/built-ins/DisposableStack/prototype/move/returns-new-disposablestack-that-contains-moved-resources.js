@@ -5,7 +5,6 @@
 esid: sec-disposablestack.prototype.move
 description: Returns a new DisposableStack that contains the resources originally contained in this stack.
 info: |
-
   DisposableStack.prototype.move ( )
 
   1. Let disposableStack be the this value.
