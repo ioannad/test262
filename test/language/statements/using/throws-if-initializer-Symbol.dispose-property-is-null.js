@@ -64,7 +64,6 @@ info: |
   2. If func is either undefined or null, return undefined.
   3. ...
 
-includes: []
 features: [explicit-resource-management]
 ---*/
 

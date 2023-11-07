@@ -57,7 +57,6 @@ info: |
   ...
 
 
-includes: []
 features: [explicit-resource-management]
 ---*/
 

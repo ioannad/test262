@@ -6,7 +6,6 @@ esid: pending
 description: >
     module and block scope await using
 flags: [module]
-includes: []
 features: [explicit-resource-management]
 ---*/
 

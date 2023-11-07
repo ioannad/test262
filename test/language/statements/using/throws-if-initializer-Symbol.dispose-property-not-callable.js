@@ -68,7 +68,6 @@ info: |
   3. If IsCallable(func) is false, throw a TypeError exception.
   4. Return func.
 
-includes: []
 features: [explicit-resource-management]
 ---*/
 
