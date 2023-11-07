@@ -9,7 +9,6 @@ negative:
   phase: parse
   type: SyntaxError
 flags: [async]
-includes: []
 features: [explicit-resource-management]
 ---*/
 
