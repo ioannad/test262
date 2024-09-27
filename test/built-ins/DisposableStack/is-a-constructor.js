@@ -21,4 +21,3 @@ features: [explicit-resource-management, Reflect.construct]
 
 assert.sameValue(isConstructor(DisposableStack), true, 'isConstructor(DisposableStack) must return true');
 new DisposableStack();
-

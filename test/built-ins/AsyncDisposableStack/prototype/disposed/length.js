@@ -3,21 +3,20 @@
 /*---
 esid: sec-get-asyncdisposablestack.prototype.disposed
 description: >
-  Map.prototype.size.length value and descriptor.
+  AsyncDisposableStack.prototype.disposed.length value and descriptor.
 info: |
-  get Map.prototype.size
+  get AsyncDisposableStack.prototype.disposed
 
   17 ECMAScript Standard Built-in Objects
 includes: [propertyHelper.js]
+features: [explicit-resource-management]
 ---*/
 
-var descriptor = Object.getOwnPropertyDescriptor(Map.prototype, 'size');
+var descriptor = Object.getOwnPropertyDescriptor(AsyncDisposableStack.prototype, 'disposed');
 
-assert.sameValue(
-  descriptor.get.length, 0,
-  'The value of `Map.prototype.size.length` is `0`'
-);
-
-verifyNotEnumerable(descriptor.get, 'length');
-verifyNotWritable(descriptor.get, 'length');
-verifyConfigurable(descriptor.get, 'length');
+verifyProperty(descriptor.get, 'length', {
+  value: 0,
+  enumerable: false,
+  writable: false,
+  configurable: true
+});

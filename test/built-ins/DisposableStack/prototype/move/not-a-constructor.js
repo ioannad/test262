@@ -30,4 +30,3 @@ assert.sameValue(
 assert.throws(TypeError, () => {
   let stack = new DisposableStack({}); new stack.move();
 }, '`let stack = new DisposableStack({}); new stack.move()` throws TypeError');
-

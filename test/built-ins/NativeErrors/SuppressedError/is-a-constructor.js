@@ -21,4 +21,4 @@ features: [Reflect.construct, explicit-resource-management]
 
 assert.sameValue(isConstructor(SuppressedError), true, 'isConstructor(SuppressedError) must return true');
 new SuppressedError();
-  
+
